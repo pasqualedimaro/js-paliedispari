@@ -8,3 +8,9 @@ Dichiariamo chi ha vinto.*/
 function generateRandomNumber(){
     return Math.floor(Math.random()* 5) + 1
 }
+
+// creo un'altra funzione per verificare se il numero è pari
+
+function isEven(number){
+    return number % 2 ===0;
+}

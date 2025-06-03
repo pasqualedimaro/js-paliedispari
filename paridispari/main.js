@@ -33,3 +33,19 @@ const sum = userNumber + computerNumber;
 
 // determino se la somma è pari o dispari e chi ha vinto con le condition
 
+let result;
+if (isEven(sum)) {
+    result = "pari";
+} else {
+    result = "dispari";
+}
+
+let winner;
+if (userChoice === result) {
+    winner = "Hai vinto!";
+} else {
+    winner = "Ha vinto il computer!";
+}
+
+//mostro i risultati con alert
+alert(`Tu: ${userNumber} Computer: ${computerNumber} Somma: ${sum} (${result}) ${winner}`);

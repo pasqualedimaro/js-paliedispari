@@ -23,4 +23,13 @@ const userChoice = prompt("scegli pari o dispari:").toLowerCase()
 
 const userNumber = Number(prompt("inserisci un numero da 1 a 5:"));
 
+// genero il numero casuale per il computer dalla funzione
+
+const computerNumber = generateRandomNumber();
+
+// calcolo la somma dei due numeri
+
+const sum = userNumber + computerNumber;
+
+// determino se la somma è pari o dispari e chi ha vinto con le condition
 

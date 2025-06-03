@@ -11,6 +11,15 @@ function isPalindrome(word){
     word = word.toLowerCase();
     // apro un ciclo for che confronta i caratteri, primo/ultimo secondo/penultimo
      for (let i = 0; i < word.length / 2; i++) {
+        // confronto il carattere alla posizione i con quello speculare
+        if (word[i] !== word[word.length - 1 - i]){
+            return false; // se trova differenze allora non è palindroma
+        }
 
      }
+     return true; // se il ciclo finisce senza trovare differenze allora è palindroma
 }
+
+//chiedo all'utente di inserire una parola
+
+const userWord = prompt("inserisci una parola")

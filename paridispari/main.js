@@ -14,3 +14,13 @@ function generateRandomNumber(){
 function isEven(number){
     return number % 2 ===0;
 }
+
+// chiedo all'utente di scegliere pari o dispari e aggiungo tolowercase per evitare problemi con maiuscole
+
+const userChoice = prompt("scegli pari o dispari:").toLowerCase()
+
+// poi chiedo all'utente di inserire un numero da 1 a 5 
+
+const userNumber = Number(prompt("inserisci un numero da 1 a 5:"));
+
+

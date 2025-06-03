@@ -23,3 +23,14 @@ function isPalindrome(word){
 //chiedo all'utente di inserire una parola
 
 const userWord = prompt("inserisci una parola")
+
+//creo le condition
+
+if (userWord){
+    if (isPalindrome(userWord)){
+        alert(`"${userWord}" è palindroma!`); //se la funzione restituisce true allora è palindroma
+
+    } else{
+        alert(`"${userWord}" non è palindroma.`);// se la funzione restituisce false
+    }
+}
